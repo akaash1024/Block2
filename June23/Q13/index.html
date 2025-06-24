@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Akash's Biography</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #007acc;
+        text-align: center;
+      }
+
+      h2 {
+        color: #005b99;
+        margin-top: 30px;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      form {
+        margin-top: 15px;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        
+        max-width: 400px;  /* ! no matter how much space is there i will take only 400 or less */
+        min-width: 300px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 95%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #007acc;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+      }
+
+      input[type="submit"]:hover {
+        background-color: #005b99;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, I'm Akash!</h1>
+
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web development learner, currently diving into HTML,
+      CSS, and JavaScript. I enjoy building things from scratch and
+      understanding how websites work under the hood.
+    </p>
+
+    <h2>Hobbies</h2>
+    <p>
+      In my free time, I like solving coding problems, reading tech blogs, and
+      listening to music. I also enjoy walking in nature and learning about
+      productivity techniques.
+    </p>
+
+    <h2>Contact Information</h2>
+    <p>If you'd like to get in touch, please fill out the form below:</p>
+
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
