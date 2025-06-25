@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #fff;
+        color: #222;
+      }
+
+      header {
+        background-color: #ff6347;
+        padding: 2rem;
+        text-align: center;
+        color: white;
+      }
+
+      header h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      #about img {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        display: block;
+        margin-top: 1rem;
+        border-radius: 50%;
+      }
+
+      .project {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+      }
+
+      .project a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      #contact form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+      }
+
+      #contact input,
+      #contact textarea {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      footer {
+        background-color: #ff6347;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .technologies {
+        margin-top: 0.5rem;
+      }
+
+      .technologies ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a web developer with a passion for creating functional and
+        beautiful web applications.
+      </p>
+      <p>A picture of me</p>
+      <img src="https://via.placeholder.com/100" alt="Profile placeholder" />
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project One: Personal Blog</h3>
+        <p>Screenshot of my personal blog project</p>
+        <p>
+          A personal blog where I write about web development, programming, and
+          technology.
+        </p>
+        <a href="#">View Project</a>
+        <div class="technologies">
+          <strong>Technologies Used:</strong>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Project Two: E-commerce Site</h3>
+        <p>Screenshot of my e-commerce project</p>
+        <p>
+          An e-commerce website built to simulate a real-world online shopping
+          experience.
+        </p>
+        <a href="#">View Project</a>
+        <div class="technologies">
+          <strong>Technologies Used:</strong>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required />
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Message:</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 My Portfolio</p>
+      <p>Follow me on <a href="#">Twitter</a> | <a href="#">GitHub</a></p>
+    </footer>
+  </body>
+</html>

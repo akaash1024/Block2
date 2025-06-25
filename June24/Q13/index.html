@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Styling with ID and Universal Selectors</title>
+    <style>
+      /* Universal selector to reset default spacing */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ID selector for main-title (h1) */
+      #main-title {
+        font-size: 32px;
+        color: darkblue;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      /* ID selector for subtitle (h2) */
+      #subtitle {
+        font-size: 24px;
+        color: darkgreen;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* Paragraph styling */
+      p {
+        padding: 10px;
+        border: 1px solid lightgray;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">Welcome to My Webpage</h1>
+    <h2 id="subtitle">Styling with ID and Universal Selectors</h2>
+
+    <p>This is the first paragraph. It has padding and a soft border.</p>
+    <p>This is the second paragraph. Styling is consistent with the first.</p>
+    <p>
+      This is the third paragraph. All are styled using the paragraph selector.
+    </p>
+  </body>
+</html>
