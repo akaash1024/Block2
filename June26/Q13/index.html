@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive DOM Manipulation</title>
+    <style>
+      #output-box {
+        width: 300px;
+        height: 150px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: lightgray;
+        font-size: 18px;
+      }
+      input {
+        margin: 5px 0;
+        padding: 5px;
+      }
+      button {
+        margin-right: 10px;
+        padding: 6px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Interactive DOM Manipulation</h2>
+
+    <label>Enter background color:</label><br />
+    <input
+      type="text"
+      id="color-input"
+      placeholder="e.g., red, #ff0000"
+    /><br />
+
+    <label>Enter new text content:</label><br />
+    <input type="text" id="text-input" placeholder="Type something..." /><br />
+
+    <button id="bg-button">Change Background</button>
+    <button id="text-button">Update Text</button>
+
+    <div id="output-box">Initial content inside the div.</div>
+
+    <script>
+      const colorInput = document.getElementById("color-input");
+      const textInput = document.getElementById("text-input");
+      const bgButton = document.getElementById("bg-button");
+      const textButton = document.getElementById("text-button");
+      const outputBox = document.getElementById("output-box");
+
+      bgButton.addEventListener("click", () => {
+        const color = colorInput.value.trim();
+        const testDiv = document.createElement("div");
+        testDiv.style.backgroundColor = color;
+
+        if (testDiv.style.backgroundColor === "") {
+          alert("Invalid color name!");
+        } else {
+          outputBox.style.backgroundColor = color;
+        }
+      });
+
+      textButton.addEventListener("click", () => {
+        const text = textInput.value.trim();
+        if (text === "") {
+          alert("Please enter some text!");
+        } else {
+          outputBox.textContent = text;
+        }
+      });
+    </script>
+  </body>
+</html>

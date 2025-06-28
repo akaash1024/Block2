@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM List Manipulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <ul id="item-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <button id="add-button">Add Item</button>
+
+  <script>
+    const ul = document.querySelector('#item-list');
+    const button = document.querySelector('#add-button');
+
+    button.addEventListener('click', () => {
+      const newItem = document.createElement('li');
+      const itemCount = ul.children.length + 1;
+      newItem.textContent = `New Item ${itemCount}`;
+
+      if (itemCount % 2 === 1) {
+        newItem.style.fontWeight = 'bold';
+        newItem.style.color = 'blue';
+      } else {
+        newItem.style.fontStyle = 'italic';
+        newItem.style.color = 'red';
+      }
+
+      ul.appendChild(newItem);
+    });
+  </script>
+
+</body>
+</html>
